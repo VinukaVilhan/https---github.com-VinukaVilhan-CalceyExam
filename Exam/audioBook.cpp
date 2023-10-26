@@ -14,13 +14,14 @@
     }
 
     //constructor
-    audioBook(string title, string author): book(nameOfBook, authorOfBook)
+    audioBook::audioBook(string voiceActor) : book(title, authorName), voiceActor(voiceActor) 
     {
     }
 
-    void audioBook :: printDescription()
+
+    void audioBook::printDescription() 
     {
-        cout<<"The title of the audio book is "<<book::title<<" and it's voiced by "<<voiceActor<<endl
+        cout << "The title of the audio book is " << book::title << " and it's voiced by " << audioBook::voiceActor << endl;
     }
 
 

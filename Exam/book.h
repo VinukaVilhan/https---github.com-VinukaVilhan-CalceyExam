@@ -1,4 +1,5 @@
 #include "header.h"
+#pragma once
 class book
 {
     public:
@@ -12,9 +13,9 @@ class book
         void setBook(string nameOfBook, string authorOfBook);
 
         //method
-        void virtual printDescription();
+        virtual void printDescription();
 
-    private:
+    protected:
         string title;
         string authorName;
 

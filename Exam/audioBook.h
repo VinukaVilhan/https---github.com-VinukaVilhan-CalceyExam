@@ -1,6 +1,6 @@
 #include "header.h"
 #include "book.h"
-
+#pragma once
 
 class audioBook : public book
 {
@@ -11,10 +11,10 @@ class audioBook : public book
         void setActor(string voiceActorName);
 
         //method
-        void printDescription() override;
+        virtual void printDescription() override;
 
         //constructor
-        audioBook(string title, string author): book(nameOfBook, authorOfBook);
+        audioBook(string voiceActor);
 
     private:
         string voiceActor;

@@ -1,4 +1,5 @@
 #include "header.h"
+#pragma once
 class bookshop
 {
     public:
